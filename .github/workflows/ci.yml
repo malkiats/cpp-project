@@ -27,6 +27,10 @@ jobs:
       - name: Build with Cmake
         working-directory: ./build
         run: cmake --build .
+
+      - name: Run CTest
+        working-directory: ./build
+        run: ctest --verbose
       
       - name: Test the application
         working-directory: ./build

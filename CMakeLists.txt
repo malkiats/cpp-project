@@ -8,4 +8,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
+enable_testing()
 add_executable(my_cpp_app src/main.cpp)
+add_test(NAME RunApp COMMAND my_cpp_app)
